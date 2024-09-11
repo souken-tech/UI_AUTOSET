@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_AUTOSET", "UI_AUTOSET\UI_AUTOSET.csproj", "{A84633D9-BDAA-4EDA-821B-E1AB93E06CCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A84633D9-BDAA-4EDA-821B-E1AB93E06CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84633D9-BDAA-4EDA-821B-E1AB93E06CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84633D9-BDAA-4EDA-821B-E1AB93E06CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84633D9-BDAA-4EDA-821B-E1AB93E06CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C39686E-E43C-482F-BC5A-8A1982BFE567}
+	EndGlobalSection
+EndGlobal
