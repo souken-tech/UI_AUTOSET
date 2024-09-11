@@ -21,6 +21,7 @@ namespace UI_AUTOSET
         {
             this.panel = panel;
             this.settingJsonFilePath = settingJsonFilePath;
+
             Initialize();
         }
 
