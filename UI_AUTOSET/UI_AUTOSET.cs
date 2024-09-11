@@ -112,5 +112,28 @@ namespace UI_AUTOSET
             public string Label { get; set; }
             public string Textbox { get; set; }
         }
+
+
+        // テキストボックスの値を取得するメソッド
+        public Dictionary<string, string> GetTextBoxValues()
+        {
+            var textBoxValues = new Dictionary<string, string>();
+
+            // tableLayoutPanel内のコントロールをすべて確認
+            foreach (Control rowPanel in tableLayoutPanel.Controls)
+            {
+                // 各Panelのコントロールを確認
+                foreach (Control control in rowPanel.Controls)
+                {
+                    if (control is TextBox textBox)
+                    {
+                        // テキストボックスのNameとTextをDictionaryに追加
+                        textBoxValues.Add(textBox.Name, textBox.Text);
+                    }
+                }
+            }
+
+            return textBoxValues;
+        }
     }
 }

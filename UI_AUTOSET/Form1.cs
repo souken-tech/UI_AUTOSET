@@ -27,14 +27,29 @@ namespace UI_AUTOSET
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GetTextBoxValues();
         }
 
+        private void GetTextBoxValues()
+        {
 
+            // テキストボックスの値を取得
+            Dictionary<string, string> textBoxValues = ui_set.GetTextBoxValues();
 
+            string message= string.Empty;
 
+            // 値を確認（ここではコンソールに出力）
+            foreach (var kvp in textBoxValues)
+            {
+                Console.WriteLine($"TextBox Name: {kvp.Key}, Value: {kvp.Value}");
+                message = message + $"TextBox Name: {kvp.Key}, Value: {kvp.Value}" + Environment.NewLine;
 
+            }
+
+            MessageBox.Show(message);
+        }
     }
 }
